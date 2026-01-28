@@ -27,6 +27,7 @@
         }
     </script>
 <style>
+        html { scroll-behavior: smooth; }
         body { font-family: 'Manrope', sans-serif; }
         .material-symbols-outlined { font-size: 24px; vertical-align: middle; }
     </style>
@@ -51,9 +52,9 @@
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="#despre">Despre</a>
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="#contact">Contact</a>
 </nav>
-<button class="bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-blue-700 transition-all shadow-md">
-                Contact Rapid
-            </button>
+<a href="#contact" class="bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-blue-700 transition-all shadow-md">
+Contact Rapid
+</a>
 </div>
 </header>
 <main class="layout-container flex flex-col items-center">
@@ -430,7 +431,11 @@
 <div class="absolute inset-0 bg-cover bg-center opacity-50" data-alt="Map of Bucharest location" data-location="Bucharest" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAQ6PSp9o-4JFZadw6jmKGt1vL23xsWYMdo-9N6yx6I0mxtHhW7R41IBKqs_ZXX3GbYITQHTq8MAnlEduA2RLomZ5I94FVWchICNKfbDMsaxafKyA7-3B8_Ij3sFFQ-6o9SNE9pLhxpwH9ZaaswzpmaENm0DwhZIsMNMRoiDDrQWse1R66311TMsS8FtqentzUoz8tf4ELbpWV_GlBvm_QBuRfp2oMUryhYU0vZXS_lsdOc-DXpPLG04cR2wYr4MEX1JebHJKuLdYC');"></div>
 <div class="relative z-10 bg-white p-4 rounded-xl shadow-lg border border-slate-200">
 <p class="text-xs font-bold text-slate-900">Locație Birou Notarial</p>
-<button class="mt-2 text-[10px] text-primary underline">Vezi pe Google Maps</button>
+<a class="mt-2 inline-block text-[10px] text-primary underline"
+   href="https://www.google.com/maps/search/?api=1&query=Strada+Muntisor+12%2C+Scara+F%2C+Apartamentul+3%2C+505100+Codlea%2C+Romania"
+   target="_blank" rel="noopener">
+  Vezi pe Google Maps
+</a>
 </div>
 </div>
 </div>
@@ -484,9 +489,20 @@
 </div>
 </div>
 <div class="flex gap-6">
-<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
-<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
-<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">call</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors"
+   href="#programare" aria-label="Programare">
+  <span class="material-symbols-outlined">calendar_today</span>
+</a>
+
+<a class="text-slate-400 hover:text-primary transition-colors"
+   href="mailto:contact@notardumitru.ro" aria-label="Email">
+  <span class="material-symbols-outlined">alternate_email</span>
+</a>
+
+<a class="text-slate-400 hover:text-primary transition-colors"
+   href="tel:+40722000000" aria-label="Telefon">
+  <span class="material-symbols-outlined">call</span>
+</a>
 </div>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 border-t border-slate-100 dark:border-slate-800 pt-12">
@@ -509,16 +525,19 @@
 <div class="col-span-2">
 <h5 class="font-bold mb-4">Newsletter</h5>
 <p class="text-sm text-slate-500 mb-4">Abonează-te pentru a primi actualizări legislative.</p>
-<div class="flex gap-2">
-<input class="bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg p-2 flex-grow text-sm" placeholder="Email-ul tău" type="email"/>
-<button class="bg-slate-900 dark:bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm">OK</button>
+<div class="flex flex-col sm:flex-row gap-2">
+  <a class="bg-slate-900 dark:bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm text-center"
+     href="mailto:contact@notardumitru.ro?subject=Abonare%20newsletter&body=Buna%20ziua%2C%0D%0ADoresc%20abonare%20la%20newsletter.%0D%0AMultumesc.">
+    Abonare prin email
+  </a>
 </div>
 </div>
 </div>
 <div class="text-center text-xs text-slate-400">
-                © 2023 Birou Individual Notarial Dumitru Corina. Toate drepturile rezervate.
+                © 2026 Birou Individual Notarial Dumitru Corina. Toate drepturile rezervate. Powered by H3
             </div>
 </div>
 </footer>
 
 </body></html>
+
